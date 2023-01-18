@@ -1,0 +1,67 @@
+
+
+\documentclass[b5paper]{article}
+\usepackage{graphicx}
+\title{DTL Assignment - Linux Commands}
+\author{Avdhut Kamble  \\ 142203010 \\	\\ \\ \\ 	\includegraphics[height=5cm]{COEP.png}}
+\date{\today}
+
+\usepackage{ragged2e}
+\usepackage{blindtext}
+\usepackage{csvsimple}
+
+\usepackage{amsmath}
+\usepackage{graphicx,float}
+\usepackage{subfigure}
+\begin{document}
+	\maketitle
+	\pagenumbering{gobble}
+	\newpage
+	\pagenumbering{arabic}
+	\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153514.png} \caption{"ls" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153516.png} \caption{"ls -F" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153517.png} \caption{"ls -l" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153519.png} \caption{"ls -a" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153520.png} \caption{"ls *[0-9]*" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153522.png} \caption{"mkdir dir1 ; ls" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153523.png} \caption{"mkdir dir2 dir3 ; ls" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153525.png} \caption{"mkdir -p /tmp/dir1/dir2 ; ls" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153526.png} \caption{"touch ./dir1/file ; ls" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153528.png} \caption{"mv ./dir1/file ./dir2/file ; ls" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153529.png} \caption{"pwd" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153531.png} \caption{"touch file1 ; ls" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153532.png} \caption{"rm -f file1 ; ls" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153534.png} \caption{"rm -rf dir1 ; ls" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153535.png} \caption{"rm -rf dir2 ; ls" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153537.png} \caption{"rmdir dir3 ; ls" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153538.png} \caption{"touch -t 0712250000 file1 ; ll" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153540.png} \caption{"tree" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153541.png} \caption{"mkdir 1/File2 ; ls 1/" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153543.png} \caption{"find -name "s"" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153544.png} \caption{"find -iname "File1"" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153546.png} \caption{"find ./ -type f -name "*.conf"" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153547.png} \caption{"find ./ -size 50c" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153549.png} \caption{"find ./ -size -50c | head -n 10" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153550.png} \caption{"find ./ -size +700M" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153552.png} \caption{"find ./ -mtime 1" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153553.png} \caption{"find ./ -atime -1" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153555.png} \caption{"find ./ -ctime +3" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153557.png} \caption{"find ./ -mmin -1" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153558.png} \caption{"find ./ -perm 644" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153600.png} \caption{"find ./ -perm -644" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153601.png} \caption{"wc -l commands.txt || cat commands.txt | wc -l" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153603.png} \caption{"wc -w < commands.txt" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153604.png} \caption{"wc -c < commands.txt" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153606.png} \caption{"wc -m < commands.txt" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230113-153607.png} \caption{"wc -L < commands.txt" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230118-120041.png} \caption{"cat arithmetic_expansion.sh" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230118-120043.png} \caption{"bash arithmetic_expansion.sh #Arithmetic Expansion in Shell Script" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230118-120045.png} \caption{"cat multiline.sh" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230118-120046.png} \caption{"bash multiline.sh #Multi-line Output" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230118-120048.png} \caption{"cat newnano.sh" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230118-120050.png} \caption{"bash newnano.sh #" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230118-120051.png} \caption{"cat parameter.sh" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230118-120053.png} \caption{"bash parameter.sh -name Avdhut -mis 142203010 #Using Parameters in Bash Script" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230118-120055.png} \caption{"cat shellexpansion.sh" command} \end{figure}
+\begin{figure} \centering \includegraphics[width=1\linewidth]{screenshots/screenshot_20230118-120057.png} \caption{"bash shellexpansion.sh #Using Shell Expansion "with curly braces {}"" command} \end{figure}	
+\end{document}
