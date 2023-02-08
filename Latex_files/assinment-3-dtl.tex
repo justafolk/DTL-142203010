@@ -1,0 +1,187 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\title{DTL Assignment 3 - Include Graphics and Tables}
+\author{Avdhut Kamble  \\		\includegraphics[height=10cm]{COEP.png}}
+\date{\today}
+\usepackage[english]{babel}
+\usepackage{ragged2e}
+\usepackage{blindtext}
+\usepackage{csvsimple}
+
+\usepackage{amsmath}
+\usepackage{graphicx,float}
+\usepackage{subfigure}
+
+\begin{document}
+	
+	\maketitle
+	\pagenumbering{gobble}
+	\newpage
+	\pagenumbering{arabic}
+	
+	\title{}
+	
+	
+	
+	\section{LAUC Syllabus}
+	\subsection{Unit 1}
+	1. Linear Algebra\\
+	2. Vector Spaces\\
+	3. Differential Equations\\
+	\subsection{Unit 2}
+	1. Laplace Inverse Transform\\
+	2. Transfer Function\\
+	3. Time Domain Analysis\\
+	\subsection{Unit 3}
+	1. Functions of several variables \\
+	2. Level curves and level surfaces\\
+	3. Partial and directional derivatives\\
+	
+	
+	\newpage
+	\begin{flushleft}
+		\bfseries\large
+		\begin{center}
+			College of Engineering, Pune. \\
+			\normalfont\normalsize
+			B.Tech II Year \\
+			November 2022, Odd Semester
+			\bfseries \\
+			Linear Algebra and Uni-variate Calculus \qquad
+			
+			TEST - 1
+		\end{center}
+		
+		
+		\bigskip
+		
+		\normalfont\normalsize
+		
+		\raggedright Duration-1.5 hours 
+		
+		\raggedleft Marks 30  
+		\\
+		
+		
+		\bfseries
+		\raggedright
+		Q.1) Solve the following:\\
+		\normalfont\normalsize
+		\hspace{1cm}(a)$3x(xy-2)dx+(x^3+2y)dy=0$\hspace{4.5cm}[CO 2] [2]\\[6 pt]
+		\hspace{1cm}(b)$(2\cos{y} + 4x^2)dx -x\sin{y}dy==0$\hspace{4.09cm}[CO 2]    [3]\\
+	\end{flushleft} 
+	
+	
+	
+	
+	\begin{flushleft}
+		
+		Q.2) Prove the following matrices equal if $AB = A^T.B^T$.\hspace{1cm}[CO 1] [1]\\ 
+		\[
+		B_{m\times n} =
+		\left[ {\begin{array}{cccc}
+				a_{11} & a_{12} & \cdots & a_{1n}\\
+				a_{21} & a_{22} & \cdots & a_{2n}\\
+				\vdots & \vdots & \ddots & \vdots\\
+				a_{m1} & a_{m2} & \cdots & a_{mn}\\
+		\end{array} } \right]
+		\]\[
+		A_{m\times n} =
+		\left[ {\begin{array}{cccc}
+				a_{11} & a_{12} & \cdots & a_{1n}\\
+				a_{21} & a_{22} & \cdots & a_{2n}\\
+				\vdots & \vdots & \ddots & \vdots\\
+				a_{m1} & a_{m2} & \cdots & a_{mn}\\
+		\end{array} } \right]
+		\]
+	\end{flushleft}
+	
+	\begin{flushleft}
+		\bfseries
+		Q.3)State whether the following differential equations are linear or non linear ,justify and solve:\\[10pt]
+		\normalfont
+		\hspace{1cm}(a)$xy'+2y = \frac{e^{3x}}{x}, x>0 with y(1)=1+\frac{e^3}{3}. $\hspace{2.5cm}[CO 2] [3]\\[6 pt]
+		\hspace{1cm}(b)$x^2y\frac{dy}{dx}- xy^2 = 1$\hspace{6.5cm}[CO 2] [3]
+	\end{flushleft}
+	
+	\begin{flushleft}
+		Q.4) If $x^2$ and $1$ are solutions of $yy''-xy'=0$ then so is any linear combination of these. State true or false and justify.\hspace{2cm}[CO 4] [2]
+	\end{flushleft}
+	
+	\begin{flushleft}
+		Q.5) Find a linear ordinary differential equation for which the function $e^{-x}\cos{2x}$ and $e^{-x}\sin{2x}$ are linearly independent solutions.\hspace{0.7cm}[CO 2] [3]
+	\end{flushleft}
+	\begin{flushleft}
+		Q.6) Solve the given equation of form $AX=B$
+		\[
+		A=
+		\begin{pmatrix}
+			1 & 1 & 1 \\
+			1 & 2 & 3 \\
+			1 & 4 & 7 \\
+		\end{pmatrix}
+		,
+		X=
+		\begin{pmatrix}
+			x \\
+			y \\
+			z \\
+		\end{pmatrix}
+		B=
+		\begin{pmatrix}
+			6  \\
+			14 \\
+			30 \\
+		\end{pmatrix}
+		\]
+	\end{flushleft}
+	\begin{flushleft}
+		Q.7) Show that the following matrix is diagonalizable:
+		\[
+		A=
+		\begin{pmatrix}
+			1 & 0 & 1 \\
+			1 & 2 & 1 \\
+			2 & 2 & 3 \\
+		\end{pmatrix}
+		\]
+	\end{flushleft}
+	
+	
+	
+	\newpage				
+	
+	\begin{table}
+		\section{Table from raw values}
+		\begin{center}
+			\caption{Price of stationary}
+			\begin{tabular}{||c |c |c ||} 
+				\textbf{Sr. no.} & 
+				\textbf{Item} &
+				\textbf{Price}\\
+				
+				\hline
+				1 & Pencil     & 20 \\
+				2 & Pen    & 40 \\
+				3 & Notebook     & 50 \\
+				4 & Writing Pad    & 60 \\
+				5 & Bag & 10 \\
+			\end{tabular}
+		\end{center}
+	\end{table}		
+	\section{Include table from CSV}
+	\begin{Center}
+		
+		
+		\begin{tabular}{|c|c|c|}%
+			\hline
+			\bfseries Name & \bfseries Age & \bfseries College
+			\csvreader[head to column names]{Book1.csv}{}
+			{\\\hline\csvcoli&\csvcolii&\csvcoliii}\\
+			\hline
+		\end{tabular}	
+	\end{Center}		
+	
+	
+	
+\end{document}
